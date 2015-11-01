@@ -6,9 +6,6 @@ RUN apt-get install -y \
     service mysql stop && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Expose mysql port
-EXPOSE 3306
-
 # pre-install some specific Ruby Gems into Chef DK
 RUN chef gem install \
   rack-test:0.6.3 \
