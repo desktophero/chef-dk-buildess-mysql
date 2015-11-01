@@ -1,4 +1,4 @@
-ROM desktophero/chefdk-buildess
+FROM desktophero/chefdk-buildess
 MAINTAINER Jason Walker <desktophero@gmail.com>
 
 RUN apt-get install -y \
