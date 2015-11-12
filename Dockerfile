@@ -3,7 +3,7 @@ MAINTAINER Jason Walker <desktophero@gmail.com>
 
 RUN apt-get install -y \
     mysql-server-5.6 && \
-    service mysql stop && \
+    service mysql stop libmysqlclient-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # pre-install some specific Ruby Gems into Chef DK
